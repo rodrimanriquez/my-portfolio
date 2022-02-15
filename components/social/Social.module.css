@@ -1,0 +1,44 @@
+
+.socialWrapper{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .socialWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 20px;
+    bottom: 0;
+    gap: 5px;
+    z-index: 4000;
+  }
+  
+  .line {
+    background-color: var(--color-text);
+    width: 1px;
+    height: 100px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .wrapperIcon {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+  }
+  
+  .wrapperIcon svg {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .wrapperIcon:hover {
+    color: var(--color-primary);
+    transform: translateY(-7px);
+    transition: all 0.3s ease;
+  }
+}

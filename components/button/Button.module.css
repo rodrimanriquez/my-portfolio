@@ -1,0 +1,23 @@
+.primary {
+  display: block;
+  width: fit-content;
+  padding: 10px 40px;
+  background-color: rgba(169, 112, 255, 0);
+  border: 2px solid var(--color-primary);
+  color: var(--color-text);
+  font-size: 1rem;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+.primary:hover {
+  background-color: rgba(169, 112, 255, 0.3);
+  border: 2px solid var(--color-primary);
+  color: var(--color-text);
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(169, 112, 255, 0.3);
+}
+
+.primary:active {
+  background-color: var(--color-primary);
+}

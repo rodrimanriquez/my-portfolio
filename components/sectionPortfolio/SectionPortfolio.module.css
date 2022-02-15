@@ -1,0 +1,15 @@
+.portfolioWrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+.portfolioContent {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 100px 0;
+  gap: 30px;
+}
+.portfolioTitle {
+  font-size: 3rem;
+  color: var(--color-primary);
+}

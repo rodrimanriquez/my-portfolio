@@ -1,0 +1,19 @@
+/* Css Section Hero  */
+.heroWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.heroMyNameIs {
+  font-size: 1.7rem;
+  color: var(--color-primary);
+}
+/* Css Section Hero  */

@@ -1,0 +1,71 @@
+.contactWrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+.contactContent {
+  display: flex;
+  text-align: start;
+  padding: 100px 0;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contactInput {
+  height: 40px;
+  border: 2px solid var(--color-text);
+  border-radius: 15px;
+  background-color: var(--color-background-light);
+  margin-bottom: 20px;
+  color: var(--color-text);
+  padding: 0 10px;
+  transition: all 0.3;
+}
+.contactInput:focus {
+  outline: none;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 6px -1px rgba(169, 112, 255, 0.5);
+  transition: all 1;
+}
+
+.contactLabel {
+  margin-bottom: 10px;
+}
+
+.contactInfo {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.contactInfoIcon {
+  height: 24px;
+  width: 24px;
+}
+.contactInfoIcon svg {
+  fill: var(--color-primary);
+}
+
+.contactTextArea {
+  border: 2px solid var(--color-text);
+  border-radius: 15px;
+  background-color: var(--color-background-light);
+  margin-bottom: 20px;
+  color: var(--color-text);
+  padding: 10px;
+  transition: all 0.3;
+  resize: none;
+}
+.contactTextArea:focus {
+  outline: none;
+  border: 2px solid var(--color-primary);
+  box-shadow: 0 4px 6px -1px rgba(169, 112, 255, 0.5);
+  transition: all 1;
+}

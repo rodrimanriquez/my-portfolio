@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+  justify-content: space-between;
+  background-color: var(--color-background);
+}
+
+.wrapperBtns{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+

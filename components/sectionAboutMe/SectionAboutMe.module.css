@@ -1,0 +1,22 @@
+/* Css Section About me  */
+.aboutMeWrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.aboutMeContent {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding: 100px 0;
+  gap: 30px;
+}
+
+.aboutMeWrapperImage {
+  border: 2px solid var(--color-primary);
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+}
+
+/* Css Section About me  */
