@@ -1,14 +1,21 @@
+import PropTypes from "prop-types"
 import styles from "./typography.module.css"
 
 // Defining the HTML tag that the component will support
-const variantsMapping = {
+
+const colorMapping = {
+  primary: "primary-color",
+  text: "text-color",
+}
+
+const asMapping = {
   h1: "h1",
   h2: "h2",
   h3: "h3",
   h4: "h4",
   h5: "h5",
   h6: "h6",
-  body1: "p",
+  p: "p",
 }
 
 // Create a functional component that take
@@ -17,17 +24,27 @@ const variantsMapping = {
 // children: the node passed inside the Component
 // ...props: the default attribute of the Component
 
-const Typography = ({ variant, type, children, ...props }) => {
-  // If the variant exists in variantsMapping, we use it.
-  // Otherwise, use p tag instead.
-
-  const Component = variant ? variantsMapping[variant] : "p"
-
+const Typography = ({ as, variant, children, color, ...props }) => {
+  const Component = asMapping[as]
+  const textColor = colorMapping[color]
   return (
-    <Component className={styles[type]} {...props}>
+    <Component className={`${styles[variant]} ${textColor}`} {...props}>
       {children}
     </Component>
   )
+}
+
+Typography.defaultProps = {
+  as: "p",
+  variant: "normal",
+  color: "text-color",
+}
+
+Typography.propTypes = {
+  as: PropTypes.string,
+  variant: PropTypes.string,
+  children: PropTypes.string.isRequired,
+  color: PropTypes.string,
 }
 
 export default Typography

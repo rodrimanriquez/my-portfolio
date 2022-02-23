@@ -9,7 +9,6 @@ const asMapping = {
 // Create a functional component that take
 // children: the node passed inside the Component
 // as: the selected html tag
-// variant: the selected color
 // ...props: the default attribute of the Component
 
 const Button = ({ children, as, variant, ...props }) => {
@@ -21,17 +20,15 @@ const Button = ({ children, as, variant, ...props }) => {
     </Component>
   )
 }
-
-Button.defaultProps = {
-  as: "button",
-  variant: "primary",
-}
-
 Button.propTypes = {
   as: PropTypes.string,
   variant: PropTypes.string,
   children: PropTypes.string.isRequired,
-  props: PropTypes.props,
+}
+
+Button.defaultProps = {
+  as: "button",
+  variant: "primary",
 }
 
 export default Button

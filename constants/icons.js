@@ -5,6 +5,7 @@ import IconMoon from "../public/assets/icons/moon.svg"
 import IconAddress from "../public/assets/icons/address.svg"
 import IconEmail from "../public/assets/icons/email.svg"
 import IconPhone from "../public/assets/icons/phone.svg"
+import IconCancel from "../public/assets/icons/cancel.svg"
 
 export {
   IconGithub,
@@ -14,4 +15,5 @@ export {
   IconAddress,
   IconEmail,
   IconPhone,
+  IconCancel
 }

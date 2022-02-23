@@ -4,7 +4,7 @@ const Email = () => {
   return (
     <div className={styles.emailWrapper}>
       <div className={styles.emailRotateText}>
-        <a href="mailto:rmanriquez@gmail.com" className={styles.emailText}>rmanriquez@gmail.com</a>
+        <a href="mailto:rmanriquez@gmail.com" className={styles.emailText}>rmanriquezgonzal@gmail.com</a>
       </div>
       <div className={styles.line}></div>
     </div>

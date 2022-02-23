@@ -1,20 +1,27 @@
-import Button from "../button/Index"
+import Button from "../button/Button.js"
 import styles from "./SectionHero.module.css"
-import textStyle from "../../styles/Text.module.css"
+import Typography from "../typography/Typography.js"
+import Link from "next/link"
 
 const SectionHero = () => {
   return (
     <section id="hero" className={styles.heroWrapper}>
       <div className={styles.heroContent}>
         <h1 className={styles.heroMyNameIs}>Hola 👋, mi nombre es</h1>
-        <h1 className={textStyle.textTitleXl}>Rodrigo Manríquez</h1>
-        <h2 className={textStyle.textSubtitle}>
+        <Typography as="h1" variant="titleXl" color="primary">
+          Rodrigo Manríquez
+        </Typography>
+        <Typography as="h2" variant="subtitle">
           Ingeniero informatico y Desarrollador Front-end.
-        </h2>
+        </Typography>
       </div>
-      <Button as="a" variant="primary" href="#aboutMe">
-        Comencemos
-      </Button>
+      <Link href="/#aboutMe" passHref>
+        <div>
+          <Button as="button" variant="primary">
+            Comencemos
+          </Button>
+        </div>
+      </Link>
     </section>
   )
 }
